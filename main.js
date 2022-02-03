@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// alert("asd")
 $("#add-to-cart").click(function(e) {
 	alert("GA Add to Cart Button Clicked");
+	console.log("GA")
 
 	//Add to Cart GA event starts here
 
