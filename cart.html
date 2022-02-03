@@ -67,6 +67,29 @@
 <footer id="site-info">
 		Copyright &copy; 
 	</footer>
+<script>
+	
+	$("#add-to-cart").click(function(e) {
+	alert("GA Add to Cart Button Clicked");
+	console.log("GA")
 
+	//Add to Cart GA event starts here
+
+	gtag('event', 'add_to_cart', {
+	  "items": [
+	    {
+	      "id": "P12345",
+	      "name": "Android Warhol T-Shirt",
+	      "list_name": "Search Results",
+	      "brand": "Google",
+	      "category": "Apparel/T-Shirts",
+	      "variant": "Black",
+	      "list_position": 1,
+	      "quantity": 2,
+	      "price": '2.0'
+	    }
+	  ]
+	});
+</script>
 </body>
 </html>	
